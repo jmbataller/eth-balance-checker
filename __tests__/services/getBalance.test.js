@@ -1,4 +1,4 @@
-const getBalance = require('../../routes/balances').getBalance;
+const getBalance = require('../../services/getBalance');
 var nock = require('nock');
 
 
