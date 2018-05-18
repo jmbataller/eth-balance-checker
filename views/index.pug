@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h3 Check ETH address balance
+
+  form(method='GET' action='/balances')
+    label(for='address') ETH address:
+    input#name.form-control(type='text', placeholder='ETH address' name='address')
+    button.btn Check balance
+
+    p ETH balance: #{balance}
